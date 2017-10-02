@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color="navcolor">
+    <ion-title>
+      Refill
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="scanCode()">
+        <ion-icon name="qr-scanner"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="morePopOver($event)">
+        <ion-icon name="more" md="md-more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-navbar>
+      <ion-item>
+        <ion-input type="number" [(ngModel)]="inputCardNumber" placeholder="Card number"></ion-input>
+      </ion-item>
+      <ion-buttons end>
+        <button ion-button icon-only color="secondary" (click)="rechargeCard(inputCardNumber)">
+          <ion-icon name="call"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+
+	<ion-card>
+	  <img src="assets/images/laotelecom.jpg"/>
+	  <div class="card-title">Lao telecom</div>
+	</ion-card>
+	<ion-card>
+	  <img src="assets/images/etl.jpg"/>
+	  <div class="card-title">ETL</div>
+	</ion-card>
+	<ion-card>
+	  <img src="assets/images/unitel.jpg"/>
+	  <div class="card-title">Unitel</div>
+	</ion-card>
+	<ion-card>
+	  <img src="assets/images/beeline.jpg"/>
+	  <div class="card-title">Beeline</div>
+	</ion-card>
+</ion-content>
