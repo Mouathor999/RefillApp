@@ -14,6 +14,12 @@
 
 
 <ion-content padding>
+  <ion-refresher (ionRefresh)="refreshPage($event)">
+    <ion-refresher-content
+      pullingIcon="ios-arrow-down"
+    ></ion-refresher-content>
+  </ion-refresher>
+
   <h1 text-center><b>ຊິມເນັດ</b></h1>
   <ion-list>
     <ion-item>

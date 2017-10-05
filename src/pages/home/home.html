@@ -19,16 +19,22 @@
 </ion-header>
 
 <ion-content>
-    <ion-navbar>
-      <ion-item>
-        <ion-input type="number" [(ngModel)]="inputCardNumber" placeholder="ລະຫັດບັດເຕີມເງີນ"></ion-input>
-      </ion-item>
-      <ion-buttons end>
-        <button ion-button icon-only color="secondary" (click)="rechargeCard(inputCardNumber)">
-          <ion-icon name="call"></ion-icon>
-        </button>
-      </ion-buttons>
-    </ion-navbar>
+  <ion-refresher (ionRefresh)="refreshPage($event)">
+    <ion-refresher-content
+      pullingIcon="ios-arrow-down"
+    ></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-navbar>
+    <ion-item>
+      <ion-input type="number" [(ngModel)]="inputCardNumber" placeholder="ລະຫັດບັດເຕີມເງີນ"></ion-input>
+    </ion-item>
+    <ion-buttons end>
+      <button ion-button icon-only color="secondary" (click)="rechargeCard(inputCardNumber)">
+        <ion-icon name="call"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
 
 	<ion-card (click)="openLaotelecomService()">
 	  <img src="assets/images/laotelecom.jpg"/>

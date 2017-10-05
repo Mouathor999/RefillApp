@@ -26,6 +26,12 @@ export class HomePage {
 
   }
 
+  refreshPage(refresh){
+    setTimeout(() => {
+      refresh.complete();
+    }, 3000);
+  }
+
   /** Add morePoperver method and work at click event on more icon*/
   morePopOver(event){
 

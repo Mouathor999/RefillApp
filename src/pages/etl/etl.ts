@@ -24,7 +24,10 @@ export class EtlPage {
   ) {
   }
 
-  ionViewDidLoad() {
+  refreshPage(refresh){
+    setTimeout(() => {
+      refresh.complete();
+    }, 3000);
   }
 
   registerSimPackage(packageCode: string){

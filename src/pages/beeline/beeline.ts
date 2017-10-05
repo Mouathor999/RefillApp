@@ -24,8 +24,11 @@ export class BeelinePage {
   ) {
   }
 
-  ionViewDidLoad() {
 
+  refreshPage(refresh){
+    setTimeout(() => {
+      refresh.complete();
+    }, 3000);
   }
 
   registerSimPackage(packageCode: string){
