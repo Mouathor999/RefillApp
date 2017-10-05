@@ -4,11 +4,8 @@ import {CallNumber} from '@ionic-native/call-number';
 import {MoreComponent} from '../../components/more/more';
 import {HistoryPage} from '../history/history';
 import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
-<<<<<<< HEAD
-import {LaotelecomPage} from '../laotelecom/laotelecom'
-=======
+import {LaotelecomPage} from '../laotelecom/laotelecom';
 import {EtlPage} from "../etl/etl";
->>>>>>> Add etl page, change all page title to lao language and remove SIM module from project
 
 
 @Component({
@@ -99,9 +96,8 @@ export class HomePage {
     })
   }
      // Open to laotelecom page
-  laotelecom(){
-    const laotelecom = this.modalCtrl.create(LaotelecomPage);
-    laotelecom.present();
+  openLaotelecomService(){
+    this.navCtrl.push(LaotelecomPage);
   }
 
 
