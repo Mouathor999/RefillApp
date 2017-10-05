@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar color="navcolor">
     <ion-title>
-      Refill
+      ເຕີມເງີນ
     </ion-title>
 
     <ion-buttons end>
@@ -21,7 +21,7 @@
 <ion-content>
     <ion-navbar>
       <ion-item>
-        <ion-input type="number" [(ngModel)]="inputCardNumber" placeholder="Card number"></ion-input>
+        <ion-input type="number" [(ngModel)]="inputCardNumber" placeholder="ລະຫັດບັດເຕີມເງີນ"></ion-input>
       </ion-item>
       <ion-buttons end>
         <button ion-button icon-only color="secondary" (click)="rechargeCard(inputCardNumber)">
@@ -31,22 +31,27 @@
     </ion-navbar>
 
 	<ion-card>
+<<<<<<< HEAD
     <button (click)="laotelecom($event)" >
       <img src="assets/images/laotelecom.jpg"/>
     </button>
 
 	  <div class="card-title">Lao telecom</div>
+=======
+	  <img src="assets/images/laotelecom.jpg"/>
+	  <div class="card-title">ອິນເຕີເນັດລາວໂທລະຄົມ</div>
+>>>>>>> Add etl page, change all page title to lao language and remove SIM module from project
 	</ion-card>
-	<ion-card>
+	<ion-card  (click)="openETLServices()">
 	  <img src="assets/images/etl.jpg"/>
-	  <div class="card-title">ETL</div>
+	  <div class="card-title">ອິນເຕີເນັດອີທີແອລ໌</div>
 	</ion-card>
 	<ion-card>
 	  <img src="assets/images/unitel.jpg"/>
-	  <div class="card-title">Unitel</div>
+	  <div class="card-title">ອິນເຕີເນັດຢູນີເທວ</div>
 	</ion-card>
 	<ion-card>
 	  <img src="assets/images/beeline.jpg"/>
-	  <div class="card-title">Beeline</div>
+	  <div class="card-title">ອິນເຕີເນັດບີລາຍ</div>
 	</ion-card>
 </ion-content>

@@ -11,19 +11,23 @@ import { HistoryPageModule } from '../pages/history/history.module';
 import {ComponentsModule} from '../components/components.module';
 import {MoreComponent} from '../components/more/more';
 import {HistoryPage} from '../pages/history/history';
-import {LaotelecomPage} from '../pages/laotelecom/laotelecom'
+import {LaotelecomPage} from '../pages/laotelecom/laotelecom';
+import {LaotelecomPageModule} from '../pages/laotelecom/laotelecom.module';
+import {EtlPage} from '../pages/etl/etl';
+import {EtlPageModule} from '../pages/etl/etl.module';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    LaotelecomPage
+    HomePage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     ComponentsModule,
-    HistoryPageModule
+    HistoryPageModule,
+    EtlPageModule,
+    LaotelecomPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -31,6 +35,7 @@ import {LaotelecomPage} from '../pages/laotelecom/laotelecom'
     HomePage,
     HistoryPage,
     MoreComponent,
+    EtlPage,
     LaotelecomPage
   ],
   providers: [

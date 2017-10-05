@@ -1,0 +1,88 @@
+<!--
+  Generated template for the EtlPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="navcolor">
+    <ion-title>ອິນເຕີເນັດອີທີແອລ໌</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1 text-center><b>ຊິມເນັດ</b></h1>
+  <ion-list>
+    <ion-item>
+      <ion-label text-left><b>ຄ່າສະໝັກ</b></ion-label><ion-label text-center><b>ຈຳນວນເມັກ</b></ion-label><ion-label text-end><b>ອາຍຸໃຊ້ງານ</b></ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('en1')">
+        <ion-label text-left>1000ກີບ</ion-label><ion-label text-center>240MB</ion-label><ion-label text-end>1ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('en5')">
+      <ion-label text-left>5000ກີບ</ion-label><ion-label text-center>800MB</ion-label><ion-label text-end>1ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('en10')">
+      <ion-label text-left>10,000ກີບ</ion-label><ion-label text-center>1500MB</ion-label><ion-label text-end>7ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('en50')">
+      <ion-label text-left>50,000ກີບ</ion-label><ion-label text-center>5,500MB</ion-label><ion-label text-end>30ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('en100')">
+      <ion-label text-left>100,000ກີບ</ion-label><ion-label text-center>12,000MB</ion-label><ion-label text-end>30ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('en200')">
+      <ion-label text-left>200,000ກີບ</ion-label><ion-label text-center>30,000MB</ion-label><ion-label text-end>30ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('en250')">
+      <ion-label text-left>250,000ກີບ</ion-label><ion-label text-center>ຫຼິ້ນບໍ່ຈຳກັດ</ion-label><ion-label text-end>30ວັນ</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h1 text-center><b>ຊິມໂທ</b></h1>
+  <ion-list>
+    <ion-item>
+      <ion-label text-left><b>ຄ່າສະໝັກ</b></ion-label><ion-label text-center><b>ຈຳນວນເມັກ</b></ion-label><ion-label text-end><b>ອາຍຸໃຊ້ງານ</b></ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('ep1')">
+      <ion-label text-left>1000ກີບ</ion-label><ion-label text-center>25MB</ion-label><ion-label text-end>1ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('ep5')">
+      <ion-label text-left>5000ກີບ</ion-label><ion-label text-center>125MB</ion-label><ion-label text-end>1ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('ep10')">
+      <ion-label text-left>10,000ກີບ</ion-label><ion-label text-center>250MB</ion-label><ion-label text-end>7ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('ep50')">
+      <ion-label text-left>50,000ກີບ</ion-label><ion-label text-center>1250MB</ion-label><ion-label text-end>30ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('ep100')">
+      <ion-label text-left>100,000ກີບ</ion-label><ion-label text-center>2,500MB</ion-label><ion-label text-end>30ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerSimPackage('ep200')">
+      <ion-label text-left>200,000ກີບ</ion-label><ion-label text-center>5,000MB</ion-label><ion-label text-end>30ວັນ</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h1 text-center><b>ວາຍຟາຍລ໌</b></h1>
+  <ion-list>
+    <ion-item>
+      <ion-label text-left><b>ຄ່າສະໝັກ</b></ion-label><ion-label text-center><b>ຊົ່ວໂມງ</b></ion-label><ion-label text-end><b>ອາຍຸໃຊ້ງານ</b></ion-label>
+    </ion-item>
+    <ion-item (click)="registerWifiPackage('net5')">
+      <ion-label text-left>5000ກີບ</ion-label><ion-label text-center>5ຊົ່ວໂມງ</ion-label><ion-label text-end>1ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerWifiPackage('net10')">
+      <ion-label text-left>10,000ກີບ</ion-label><ion-label text-center>10ຊົ່ມໂມງ</ion-label><ion-label text-end>7ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerWifiPackage('net50')">
+      <ion-label text-left>50,000ກີບ</ion-label><ion-label text-center>50ຊົ່ວໂມງ</ion-label><ion-label text-end>30ວັນ</ion-label>
+    </ion-item>
+    <ion-item (click)="registerWifiPackage('net100')">
+      <ion-label text-left>100,000ກີບ</ion-label><ion-label text-center>100ຊົ່ວໂມງ</ion-label><ion-label text-end>30ວັນ</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

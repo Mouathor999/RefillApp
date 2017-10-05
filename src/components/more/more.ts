@@ -9,7 +9,7 @@ import {NavParams , ViewController} from 'ionic-angular';
 @Component({
   selector: 'more',
   template: `
-    <button (click)="closePopup()">History</button>
+    <button (click)="closePopup()">ປະຫວັດເຕີມເງີນ</button>
   `,
   styles: [`
     button{
