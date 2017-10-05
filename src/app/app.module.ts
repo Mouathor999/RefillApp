@@ -3,6 +3,8 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import {CallNumber} from '@ionic-native/call-number';
+import {SMS} from '@ionic-native/sms';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -44,6 +46,8 @@ import {BeelinePageModule} from '../pages/beeline/beeline.module';
   providers: [
     StatusBar,
     SplashScreen,
+    CallNumber,
+    SMS,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

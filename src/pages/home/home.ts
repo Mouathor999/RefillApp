@@ -12,7 +12,7 @@ import {BeelinePage} from '../beeline/beeline';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
-  providers: [CallNumber,BarcodeScanner]       //add CallNumber Class to home providers to make this page know CallNumber class
+  providers: [BarcodeScanner]       //add CallNumber Class to home providers to make this page know CallNumber class
 })
 export class HomePage {
   inputCardNumber: string = ""; //Declare inputCardNumber Property to binding with ion-input on html

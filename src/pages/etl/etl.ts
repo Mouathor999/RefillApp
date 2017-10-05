@@ -12,8 +12,7 @@ import {SMS} from '@ionic-native/sms';
 @IonicPage()
 @Component({
   selector: 'page-etl',
-  templateUrl: 'etl.html',
-  providers: [SMS]
+  templateUrl: 'etl.html'
 })
 export class EtlPage {
 
