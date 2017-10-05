@@ -21,6 +21,7 @@
     ></ion-refresher-content>
   </ion-refresher>
 
+  <!--this is Net sim-->
   <h1 text-center><b>ຊິມເນັດ</b></h1>
 
 
@@ -29,25 +30,59 @@
     <ion-item>
       <ion-label text-left><b>ຄ່າສະໝັກ</b></ion-label><ion-label text-center><b>ຈຳນວນ GB</b></ion-label><ion-label text-right><b>ອາຍຸໃຊ້ງານ</b></ion-label>
     </ion-item>
-    <ion-item (click)="RegisterSimPagekage('5')">
+    <ion-item (click)="RegisterNetSimPagekage('5')">
       <ion-label text-left>5,000ກິບ</ion-label><ion-label text-center>1GB</ion-label><ion-label text-right>1 ວັນ</ion-label>
     </ion-item>
 
-    <ion-item (click)="RegisterSimPagekage('10')">
+    <ion-item (click)="RegisterNetSimPagekage('10')">
       <ion-label text-left>10,000ກິບ</ion-label><ion-label text-center>1.5GB</ion-label><ion-label text-right>7 ວັນ</ion-label>
     </ion-item>
 
-    <ion-item (click)="RegisterSimPagekage('6')">
+    <ion-item (click)="RegisterNetSimPagekage('6')">
       <ion-label text-left>50,000ກິບ</ion-label><ion-label text-center>5GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
     </ion-item>
 
-    <ion-item (click)="RegisterSimPagekage('11')">
+    <ion-item (click)="RegisterNetSimPagekage('11')">
       <ion-label text-left>150,000ກິບ</ion-label><ion-label text-center>15GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
     </ion-item>
 
-    <ion-item (click)="RegisterSimPagekage('12')">
+    <ion-item (click)="RegisterNetSimPagekage('12')">
       <ion-label text-left>250,000ກິບ</ion-label><ion-label text-center>30GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
     </ion-item>
 
+    <ion-item (click)="RegisterNetSimPagekage('13')">
+      <ion-label text-left>700,000ກິບ</ion-label><ion-label text-center>93GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
+    </ion-item>
+
+    <ion-item (click)="RegisterNetSimPagekage('14')">
+      <ion-label text-left>1500,000ກິບ</ion-label><ion-label text-center>189GB</ion-label><ion-label text-right>180 ວັນ</ion-label>
+    </ion-item>
+
+    <ion-item (click)="RegisterNetSimPagekage('15')">
+      <ion-label text-left>3000,000ກິບ</ion-label><ion-label text-center>390GB</ion-label><ion-label text-right>365 ວັນ</ion-label>
+    </ion-item>
+
+
+  </ion-list>
+
+   <!--Call sim-->
+  <h1 text-center=""><b>ເບີເຕີມເງີນ</b></h1>
+  <ion-list>
+
+    <ion-item (click)="RegisterCallSimPackage('1')">
+      <ion-label text-left>5,000ກິບ</ion-label><ion-label text-center>30GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
+    </ion-item>
+
+    <ion-item (click)="RegisterCallSimPackage()">
+      <ion-label text-left>250,000ກິບ</ion-label><ion-label text-center>30GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
+    </ion-item>
+
+    <ion-item (click)="RegisterCallSimPackage()">
+      <ion-label text-left>250,000ກິບ</ion-label><ion-label text-center>30GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
+    </ion-item>
+
+    <ion-item (click)="RegisterCallSimPackage()">
+      <ion-label text-left>250,000ກິບ</ion-label><ion-label text-center>30GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
+    </ion-item>
   </ion-list>
 </ion-content>
