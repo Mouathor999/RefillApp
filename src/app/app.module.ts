@@ -6,15 +6,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { HistoryPageModule } from '../pages/history/history.module';
-
 import {ComponentsModule} from '../components/components.module';
 import {MoreComponent} from '../components/more/more';
 import {HistoryPage} from '../pages/history/history';
+import { HistoryPageModule } from '../pages/history/history.module';
 import {LaotelecomPage} from '../pages/laotelecom/laotelecom';
 import {LaotelecomPageModule} from '../pages/laotelecom/laotelecom.module';
 import {EtlPage} from '../pages/etl/etl';
 import {EtlPageModule} from '../pages/etl/etl.module';
+import {BeelinePage} from '../pages/beeline/beeline';
+import {BeelinePageModule} from '../pages/beeline/beeline.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {EtlPageModule} from '../pages/etl/etl.module';
     ComponentsModule,
     HistoryPageModule,
     EtlPageModule,
-    LaotelecomPageModule
+    LaotelecomPageModule,
+    BeelinePageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -36,7 +38,8 @@ import {EtlPageModule} from '../pages/etl/etl.module';
     HistoryPage,
     MoreComponent,
     EtlPage,
-    LaotelecomPage
+    LaotelecomPage,
+    BeelinePage
   ],
   providers: [
     StatusBar,
