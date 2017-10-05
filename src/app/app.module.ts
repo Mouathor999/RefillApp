@@ -11,11 +11,13 @@ import { HistoryPageModule } from '../pages/history/history.module';
 import {ComponentsModule} from '../components/components.module';
 import {MoreComponent} from '../components/more/more';
 import {HistoryPage} from '../pages/history/history';
+import {LaotelecomPage} from '../pages/laotelecom/laotelecom'
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LaotelecomPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import {HistoryPage} from '../pages/history/history';
     MyApp,
     HomePage,
     HistoryPage,
-    MoreComponent
+    MoreComponent,
+    LaotelecomPage
   ],
   providers: [
     StatusBar,

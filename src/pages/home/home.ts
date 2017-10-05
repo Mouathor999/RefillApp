@@ -4,6 +4,7 @@ import {CallNumber} from '@ionic-native/call-number';
 import {MoreComponent} from '../../components/more/more';
 import {HistoryPage} from '../history/history';
 import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
+import {LaotelecomPage} from '../laotelecom/laotelecom'
 
 
 @Component({
@@ -93,5 +94,11 @@ export class HomePage {
 
     })
   }
+     // Open to laotelecom page
+  laotelecom(){
+    const laotelecom = this.modalCtrl.create(LaotelecomPage);
+    laotelecom.present();
+  }
+
 
 }
