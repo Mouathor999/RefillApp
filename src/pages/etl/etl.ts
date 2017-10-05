@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {AlertController, IonicPage, NavController, NavParams, ToastController} from 'ionic-angular';
+import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angular';
 import {SMS} from '@ionic-native/sms';
 
 /**
@@ -21,7 +21,6 @@ export class EtlPage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public alertCtrl: AlertController,
-    public toastCtrl: ToastController,
     public sms: SMS
   ) {
   }

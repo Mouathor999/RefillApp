@@ -5,7 +5,8 @@ import {MoreComponent} from '../../components/more/more';
 import {HistoryPage} from '../history/history';
 import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
 import {LaotelecomPage} from '../laotelecom/laotelecom';
-import {EtlPage} from "../etl/etl";
+import {EtlPage} from '../etl/etl';
+import {BeelinePage} from '../beeline/beeline';
 
 
 @Component({
@@ -103,6 +104,10 @@ export class HomePage {
 
   openETLServices(){
     this.navCtrl.push(EtlPage);
+  }
+
+  openBeelineServices(){
+    this.navCtrl.push(BeelinePage);
   }
 
 }
