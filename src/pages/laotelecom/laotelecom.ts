@@ -158,7 +158,7 @@ title="Hello";
         {
           text:"ໂທອອກ",
           handler:()=>{
-            const callcenterCode="121";
+            const callcenterCode="101";
             this.call.callNumber(callcenterCode,true).then(()=>{
               Callalert.dismiss();
             });
