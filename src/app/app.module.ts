@@ -18,7 +18,8 @@ import {EtlPage} from '../pages/etl/etl';
 import {EtlPageModule} from '../pages/etl/etl.module';
 import {BeelinePage} from '../pages/beeline/beeline';
 import {BeelinePageModule} from '../pages/beeline/beeline.module';
-
+import { UnitelPage} from '../pages/unitel/unitel';
+import {UnitelPageModule} from '../pages/unitel/unitel.module';
 @NgModule({
   declarations: [
     MyApp,
@@ -31,7 +32,8 @@ import {BeelinePageModule} from '../pages/beeline/beeline.module';
     HistoryPageModule,
     EtlPageModule,
     LaotelecomPageModule,
-    BeelinePageModule
+    BeelinePageModule,
+    UnitelPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,7 +43,8 @@ import {BeelinePageModule} from '../pages/beeline/beeline.module';
     MoreComponent,
     EtlPage,
     LaotelecomPage,
-    BeelinePage
+    BeelinePage,
+    UnitelPage
   ],
   providers: [
     StatusBar,

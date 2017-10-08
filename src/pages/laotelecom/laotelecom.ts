@@ -15,7 +15,6 @@ import {CallNumber} from '@ionic-native/call-number';
   templateUrl: 'laotelecom.html',
 })
 export class LaotelecomPage {
-title="Hello";
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public alertCtr:AlertController,
