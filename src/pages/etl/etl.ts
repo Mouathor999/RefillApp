@@ -109,7 +109,7 @@ export class EtlPage {
   CallCenter(){
     const Callalert = this.alertCtrl.create({
       title: "ການໂທ",
-      message: "ທ່ານຕ້ອງການໂທຫາສູນບໍລິການຂອງອີທີແອລ໌ ?",
+      message: "ທ່ານຕ້ອງການໂທຫາສູນບໍລິການຂອງອີທີແອລ໌ ບໍ?",
       buttons: [
         {
           text:"ຍົກເລີກ",
