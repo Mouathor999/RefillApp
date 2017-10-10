@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angular';
 import {SMS} from '@ionic-native/sms';
+import {CallNumber} from "@ionic-native/call-number";
 
 /**
  * Generated class for the BeelinePage page.
@@ -20,7 +21,8 @@ export class BeelinePage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public alertCtrl: AlertController,
-    public sms: SMS
+    public sms: SMS,
+    public call:CallNumber
   ) {
   }
 
@@ -64,5 +66,31 @@ export class BeelinePage {
       ]
     });
     alert.present();
+  }
+
+  //  If uaser click button on Beeline service page it will process this function as call to Beeline call center service
+  CallCenter(){
+    const Callalert = this.alertCtrl.create({
+      title: "ການໂທ",
+      message: "ທ່ານຕ້ອງການໂທຫາສູນບໍລິການຂອງບີລາຍ໌ ?",
+      buttons: [
+        {
+          text:"ຍົກເລີກ",
+          handler:()=>{
+            // Cancel code here
+          }
+        },
+        {
+          text:"ໂທອອກ",
+          handler:()=>{
+            const callcenterCode="135";
+            this.call.callNumber(callcenterCode,true).then(()=>{
+              Callalert.dismiss();
+            });
+          }
+        }
+      ]
+    });
+    Callalert.present();
   }
 }

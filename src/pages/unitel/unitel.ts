@@ -105,7 +105,7 @@ export class UnitelPage {
         {
           text:"ໂທອອກ",
           handler:()=>{
-            const callcenterCode="101";
+            const callcenterCode="109";
             this.call.callNumber(callcenterCode,true).then(()=>{
               Callalert.dismiss();
             });
