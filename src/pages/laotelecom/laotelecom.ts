@@ -146,7 +146,7 @@ export class LaotelecomPage {
   CallCenter(){
     const Callalert = this.alertCtr.create({
       title: "ການໂທ",
-      message: "ທ່ານຕ້ອງການໂທຫາສູນບໍລິການຂອງລາວໂທລະຄົມບໍ ?",
+      message: "ໂທຫາສູນບໍລິການຂອງລາວໂທລະຄົມບໍ?",
       buttons: [
         {
           text:"ຍົກເລີກ",

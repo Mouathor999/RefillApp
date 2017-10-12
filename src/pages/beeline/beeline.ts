@@ -72,7 +72,7 @@ export class BeelinePage {
   CallCenter(){
     const Callalert = this.alertCtrl.create({
       title: "ການໂທ",
-      message: "ທ່ານຕ້ອງການໂທຫາສູນບໍລິການຂອງບີລາຍ໌ ?",
+      message: "ໂທຫາສູນບໍລິການຂອງບີລາຍ໌ບໍ?",
       buttons: [
         {
           text:"ຍົກເລີກ",

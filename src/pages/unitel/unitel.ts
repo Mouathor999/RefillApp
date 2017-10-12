@@ -94,7 +94,7 @@ export class UnitelPage {
   CallCenter(){
     const Callalert = this.alertCtr.create({
       title: "ການໂທ",
-      message: "ທ່ານຕ້ອງການໂທຫາສູນບໍລິການຂອງຢູນີເທວບໍ ?",
+      message: "ໂທຫາສູນບໍລິການຂອງຢູນີເທວບໍ?",
       buttons: [
         {
           text:"ຍົກເລີກ",
