@@ -32,37 +32,37 @@
     <ion-item>
       <ion-label text-left><b>ຄ່າສະໝັກ</b></ion-label><ion-label text-center><b>ຈຳນວນ GB</b></ion-label><ion-label text-right><b>ອາຍຸໃຊ້ງານ</b></ion-label>
     </ion-item>
-    <ion-item (click)="RegisterNetSimPackage('5')">
+    <button ion-item (click)="RegisterNetSimPackage('5')">
       <ion-label text-left>5,000ກິບ</ion-label><ion-label text-center>1GB</ion-label><ion-label text-right>1 ວັນ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterNetSimPackage('10')">
+    <button ion-item (click)="RegisterNetSimPackage('10')">
       <ion-label text-left>10,000ກິບ</ion-label><ion-label text-center>1.5GB</ion-label><ion-label text-right>7 ວັນ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterNetSimPackage('6')">
+    <button ion-item (click)="RegisterNetSimPackage('6')">
       <ion-label text-left>50,000ກິບ</ion-label><ion-label text-center>5GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterNetSimPackage('11')">
+    <button ion-item (click)="RegisterNetSimPackage('11')">
       <ion-label text-left>150,000ກິບ</ion-label><ion-label text-center>15GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterNetSimPackage('12')">
+    <button ion-item (click)="RegisterNetSimPackage('12')">
       <ion-label text-left>250,000ກິບ</ion-label><ion-label text-center>30GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterNetSimPackage('13')">
+    <button ion-item (click)="RegisterNetSimPackage('13')">
       <ion-label text-left>700,000ກິບ</ion-label><ion-label text-center>93GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterNetSimPackage('14')">
+    <button ion-item (click)="RegisterNetSimPackage('14')">
       <ion-label text-left>1500,000ກິບ</ion-label><ion-label text-center>189GB</ion-label><ion-label text-right>180 ວັນ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterNetSimPackage('15')">
+    <button ion-item (click)="RegisterNetSimPackage('15')">
       <ion-label text-left>3000,000ກິບ</ion-label><ion-label text-center>390GB</ion-label><ion-label text-right>365 ວັນ</ion-label>
-    </ion-item>
+    </button>
   </ion-list>
 
    <!--Call sim-->
@@ -72,25 +72,25 @@
       <ion-label text-left><b>ຄ່າສະໝັກ</b></ion-label><ion-label text-center><b>ຈຳນວນ GB</b></ion-label><ion-label text-right><b>ອາຍຸໃຊ້ງານ</b></ion-label>
     </ion-item>
 
-    <ion-item (click)="RegisterCallSimPackage('5')">
-      <ion-label text-left>100ກິບ</ion-label><ion-label text-center>25MB</ion-label><ion-label text-right>1 ວັນ</ion-label>
-    </ion-item>
+    <button ion-item (click)="RegisterCallSimPackage('5')">
+      <ion-label text-left>1,000ກິບ</ion-label><ion-label text-center>25MB</ion-label><ion-label text-right>1 ວັນ</ion-label>
+    </button>
 
-    <ion-item (click)="RegisterCallSimPackage('1')">
+    <button ion-item (click)="RegisterCallSimPackage('1')">
       <ion-label text-left>5,000ກິບ</ion-label><ion-label text-center>125MB</ion-label><ion-label text-right>1 ວັນ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterCallSimPackage('2')">
+    <button ion-item (click)="RegisterCallSimPackage('2')">
       <ion-label text-left>10,000ກິບ</ion-label><ion-label text-center>250MB</ion-label><ion-label text-right>30 ວັນ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterCallSimPackage('3')">
+    <button ion-item (click)="RegisterCallSimPackage('3')">
       <ion-label text-left>50,000ກິບ</ion-label><ion-label text-center>1.25GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterCallSimPackage('4')">
+    <button ion-item (click)="RegisterCallSimPackage('4')">
       <ion-label text-left>100,000ກິບ</ion-label><ion-label text-center>2.5GB</ion-label><ion-label text-right>30 ວັນ</ion-label>
-    </ion-item>
+    </button>
   </ion-list>
 
   <!--Monthly sim-->
@@ -100,21 +100,46 @@
       <ion-label text-left><b>ຄ່າສະໝັກ</b></ion-label><ion-label text-center><b>ຈຳນວນ GB</b></ion-label><ion-label text-right><b>ອາຍຸໃຊ້ງານ</b></ion-label>
     </ion-item>
 
-    <ion-item (click)="RegisterMonthlySimPackage('1')">
+    <button ion-item (click)="RegisterMonthlySimPackage('1')">
       <ion-label text-left>50,000ກິບ</ion-label><ion-label text-center>1.25GB</ion-label><ion-label text-right>ບໍຈໍກັດ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterMonthlySimPackage('2')">
+    <button ion-item (click)="RegisterMonthlySimPackage('2')">
       <ion-label text-left>150,000ກິບ</ion-label><ion-label text-center>3.75GB</ion-label><ion-label text-right>ບໍຈໍກັດ</ion-label>
-    </ion-item>
+    </button>
 
-    <ion-item (click)="RegisterMonthlySimPackage('4')">
+    <button ion-item (click)="RegisterMonthlySimPackage('4')">
       <ion-label text-left>500,000ກິບ</ion-label><ion-label text-center>12.5GB</ion-label><ion-label text-right>ບໍຈໍກັດ</ion-label>
+    </button>
+
+    <button ion-item (click)="RegisterMonthlySimPackage('5')">
+      <ion-label text-left>800,000ກິບ</ion-label><ion-label text-center>20GB</ion-label><ion-label text-right>ບໍຈໍກັດ</ion-label>
+    </button>
+
+  </ion-list>
+
+  <!--LTC@Wifi-->
+  <h1 text-center><b>ວາຍຟາຍລ໌</b></h1>
+  <ion-list>
+    <ion-item>
+      <ion-label text-left><b>ຄ່າສະໝັກ</b></ion-label><ion-label text-center><b>ຊົ່ວໂມງ</b></ion-label><ion-label text-right><b>ອາຍຸໃຊ້ງານ</b></ion-label>
     </ion-item>
 
-    <ion-item (click)="RegisterMonthlySimPackage('5')">
-      <ion-label text-left>800,000ກິບ</ion-label><ion-label text-center>20GB</ion-label><ion-label text-right>ບໍຈໍກັດ</ion-label>
-    </ion-item>
+    <button ion-item (click)="registerWifiPackage('1')">
+      <ion-label text-left>5,000ກິບ</ion-label><ion-label text-center>5ຊົ່ວໂມງ</ion-label><ion-label text-right>1 ວັນ</ion-label>
+    </button>
+
+    <button ion-item (click)="registerWifiPackage('2')">
+      <ion-label text-left>10,000ກິບ</ion-label><ion-label text-center>10ຊົ່ວໂມງ</ion-label><ion-label text-right>7 ວັນ</ion-label>
+    </button>
+
+    <button ion-item (click)="registerWifiPackage('3')">
+      <ion-label text-left>25,000ກິບ</ion-label><ion-label text-center>30ຊົ່ວໂມງ</ion-label><ion-label text-right>30 ວັນ</ion-label>
+    </button>
+
+    <button ion-item (click)="registerWifiPackage('4')">
+      <ion-label text-left>50,000ກິບ</ion-label><ion-label text-center>70ຊົ່ວໂມງ</ion-label><ion-label text-right>30 ວັນ</ion-label>
+    </button>
 
   </ion-list>
 

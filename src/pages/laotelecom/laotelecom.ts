@@ -63,10 +63,10 @@ export class LaotelecomPage {
 
 
   //Wifi package
-  RegisterWifiPackage(packageWifiCode){
+  registerWifiPackage(packageWifiCode){
     const alert2 = this.alertCtr.create({
       title:"Package",
-      message:"ສະໝັກເພັກເກັກນີ້ບໍ ?",
+      message:"ສະໝັກເພັກເກັກວາຍຟາຍລ໌ນີ້ບໍ ?",
       buttons: [
         {
           text:"ຍົກເລີກ",
@@ -145,8 +145,8 @@ export class LaotelecomPage {
 //  If uaser click button on LTC service page it will process this function as call to ltc call center service
   CallCenter(){
     const Callalert = this.alertCtr.create({
-      title: "ການໂທ",
-      message: "ໂທຫາສູນບໍລິການຂອງລາວໂທລະຄົມບໍ?",
+      title: "Call center",
+      message: "ຕິດຕໍ່ສູນບໍລິການຂອງລາວໂທລະຄົມບໍ?",
       buttons: [
         {
           text:"ຍົກເລີກ",

@@ -72,7 +72,7 @@ export class EtlPage {
 
     const alert = this.alertCtrl.create({
       title: "Package",
-      message: "ສະໝັກເພັກເກັກນີ້ບໍ?",
+      message: "ສະໝັກເພັກເກັກວາຍຟາຍລ໌ນີ້ບໍ?",
 
       buttons: [
 
@@ -108,8 +108,8 @@ export class EtlPage {
   //  If uaser click button on ETL service page it will process this function as call to ETL call center service
   CallCenter(){
     const Callalert = this.alertCtrl.create({
-      title: "ການໂທ",
-      message: "ໂທຫາສູນບໍລິການຂອງອີທີແອລ໌ບໍ?",
+      title: "Call center",
+      message: "ຕິດຕໍ່ສູນບໍລິການຂອງອີທີແອລ໌ບໍ?",
       buttons: [
         {
           text:"ຍົກເລີກ",

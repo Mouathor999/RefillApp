@@ -71,8 +71,8 @@ export class BeelinePage {
   //  If uaser click button on Beeline service page it will process this function as call to Beeline call center service
   CallCenter(){
     const Callalert = this.alertCtrl.create({
-      title: "ການໂທ",
-      message: "ໂທຫາສູນບໍລິການຂອງບີລາຍ໌ບໍ?",
+      title: "Call center",
+      message: "ຕິດຕໍ່ສູນບໍລິການຂອງບີລາຍ໌ບໍ?",
       buttons: [
         {
           text:"ຍົກເລີກ",

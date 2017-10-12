@@ -93,8 +93,8 @@ export class UnitelPage {
   //Unitel call center
   CallCenter(){
     const Callalert = this.alertCtr.create({
-      title: "ການໂທ",
-      message: "ໂທຫາສູນບໍລິການຂອງຢູນີເທວບໍ?",
+      title: "Call center",
+      message: "ຕິດຕໍ່ສູນບໍລິການຂອງຢູນີເທວບໍ?",
       buttons: [
         {
           text:"ຍົກເລີກ",
