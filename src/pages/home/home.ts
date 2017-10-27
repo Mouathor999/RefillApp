@@ -65,7 +65,7 @@ export class HomePage {
       const date = new Date();
 
       /** Add new card log to newCard variable*/
-      const newCard = {cn: cnumber, d: date.getDate() + '-' + (Number.parseInt(date.getMonth().toString()) + 1) + '-' + date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes()};
+      const newCard = {cn: cnumber, d: ("0"+date.getDate().toString().slice(-2)) + '-' + ("0" + (Number.parseInt(date.getMonth().toString()) + 1)).toString().slice(-2) + '-' + date.getFullYear() + ' ' + ("0"+(date.getHours().toString().slice(-2))) + ':' + ("0"+date.getMinutes().toString().slice(-2))};
 
       /** Make phone call to recharge card */
       this.call.callNumber(cardNumber, true).then(()=>{
